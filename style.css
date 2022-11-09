@@ -119,12 +119,19 @@ color: white;
     align-items: center;
     padding: 0px 24px;
     
+    
 }
 
  h2
 {
     font-size: 32px;
     color: var(--desaturadBlue);
+}
+
+#sectionA img, #sectionB img
+{
+width: 375px;
+height: 312px;
 }
 
 #sectionA p, #sectionB p

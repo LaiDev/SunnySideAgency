@@ -130,8 +130,8 @@ color: white;
 
 #sectionA img, #sectionB img
 {
-width: 375px;
-height: 312px;
+width: 100%;
+height: auto;
 }
 
 #sectionA p, #sectionB p

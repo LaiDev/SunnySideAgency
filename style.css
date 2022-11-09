@@ -33,7 +33,8 @@ h6,
 #sectionA a, 
 #sectionB a,
 .testimonial span:first-of-type,
-#sectionD h4
+#sectionD h4,
+.navLinks li:last-child a
 {
     font-family: 'Fraunces', serif;
 }
@@ -61,8 +62,54 @@ nav
 
 .navLinks
 {
-    display: none;
+   display: none;
 }
+
+.openNav
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 329px;
+    height: 50vh;
+    background-color: white;
+    color: #808397;
+   top: 90px;
+}
+
+.navLinks a
+{
+    color: #808397;
+}
+
+.navLinks li:last-child
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 140px;
+    height: 56px;
+    text-align: center;
+    
+
+    border-radius: 75px;
+    background-color: var(--yellow);
+    
+}
+
+
+.navLinks li:last-child a
+{
+    color: black;
+}
+.openNav
+{
+   
+}
+
 
 li, a
 {

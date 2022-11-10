@@ -45,6 +45,8 @@ p, .testimonial span:last-of-type, footer ul:first-of-type li
     font-weight:600;
 }
 
+
+
 nav
 {
     display: flex;
@@ -105,10 +107,7 @@ nav
 {
     color: black;
 }
-.openNav
-{
-   
-}
+
 
 
 li, a
@@ -153,12 +152,12 @@ color: white;
 }
 
 #sectionA img, #sectionB img{
-    min-width: 375px;
+    width: 375px;
 }
 
 .contentWrapper
 {
-    min-height: 437px;
+    height: 437px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -240,7 +239,7 @@ color: #24554A;
 #sectionD
 {
 
-  min-height: 1258px;  
+  height: 1258px;  
 
 }
 
@@ -255,7 +254,7 @@ color: #24554A;
 
 #sectionD .contentWrapper
 {
-min-height: 1108px;
+height: 1108px;
 min-width: 327px;
 display: flex;
 
@@ -265,7 +264,7 @@ display: flex;
 
 .testimonialWrapper
 {
-    min-height: 1024px;
+    height: 1024px;
 
     display: flex;
     flex-direction: column;
@@ -336,7 +335,7 @@ color: #24303E;
 
 footer
 {
-    min-height: 350px;
+    height: 350px;
     background-color: #90D4C6;
 display: flex;
 
@@ -371,4 +370,245 @@ word-spacing: -0.13px;
     min-width: 164px;
     justify-content: space-between;
     display: flex;
+}
+
+@media(min-width: 1440px)
+{
+  *
+  {
+    box-sizing: border-box;
+  }
+    main
+    {
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        
+    }
+    .logo
+    {
+        width: 170px;
+        height: 33px;
+    }
+    nav .hamburger
+    {
+        display: none;
+    }
+
+    .navLinks
+    {
+        width: 467px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navLinks li a
+    {
+        color: white;
+    }
+
+    .navLinks li:last-child
+    {
+        background-color: white;
+    }
+
+    #heroSection
+    {
+        width: 100%;
+        height: 800px;
+        background-size: cover;
+        background-position:center;
+        background-image: url("./images/desktop/image-header.jpg");
+    }
+
+    #heroSection h1
+    {
+        font-size: 56px;
+    }
+
+    #sectionA
+    {
+        flex-direction: row;
+    }
+
+    #sectionB
+    {
+        flex-direction: row-reverse;
+    }
+
+#sectionA, #sectionB
+{
+align-items: center;
+}
+
+#sectionA .contentWrapper, #sectionB .contentWrapper
+{
+  
+       align-items: flex-start;
+       text-align: left;
+     width: 720px;
+     padding: 158px 110px 157px;
+     gap: 40px;
+}
+
+
+    .contentWrapper h2
+    {
+        font-size: 40px;
+        word-spacing: -0.29px;
+        line-height: 1px;
+    }
+
+    #sectionA img
+    {
+        width: 720px;
+    
+        content: url("./images/desktop/image-transform.jpg");
+    }
+
+    #sectionB img
+    {
+        width: 720px;
+        content: url("./images/desktop/image-stand-out.jpg");
+    }
+
+    #sectionB h2, #sectionA h2
+    {
+        line-height: 50px;
+    }
+
+    #sectionC
+    {
+        width: 1440px;
+        flex-direction: row;
+     
+    }
+
+    #sectionC .leftContent, #sectionC .rightContent
+    {
+        padding: 0px 190px 59px;
+    }
+
+    #sectionC .leftContent
+    {
+        width: 720px;
+        background-image: url("./images/desktop/image-graphic-design.jpg");
+    }
+
+    #sectionC .rightContent
+    {
+        width: 720px;
+        background-image: url("./images/desktop/image-photography.jpg");
+    }
+
+#sectionD
+{
+    width: 1440px;
+    display: flex;
+align-items: center;
+    justify-content: center;
+    height: 777px;
+}
+
+#sectionD h4
+{
+    font-size: 20px;
+}
+#sectionD .contentWrapper
+    {
+        flex-direction: column;
+        align-items: center;
+
+        width: 90vw;
+        height: 457px;
+        padding: 0px;
+    }
+
+    #sectionD .testimonialWrapper
+    {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .testimonial
+    {
+        height: 203px;
+        width: 351px;
+        text-align: center;
+    
+    }
+
+    .testimonial p 
+    {
+        margin: 58px 0px 69px 0px;
+    }
+
+
+#sectionE .imagesWrapper
+{
+flex-direction: row;
+height: 100%;
+}
+
+#sectionE .imagesWrapper img
+{
+    width: 360px;
+    height: 447px;
+}
+
+.drinks, .foods
+{
+    width: 720px;
+}
+
+.drinks img:first-of-type
+{
+    content: url("./images/desktop/image-gallery-milkbottles.jpg");
+}
+
+.drinks img:last-of-type
+{
+    content: url("./images/desktop/image-gallery-orange.jpg");
+}
+
+.foods img:first-of-type
+{
+    content: url("./images/desktop/image-gallery-cone.jpg");
+}
+
+.foods img:last-of-type
+{
+    content: url("./images/desktop/image-gallery-sugarcubes.jpg");
+}
+
+footer
+{
+     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
+
+footer .contentWrapper
+{
+
+    align-items: center;
+    width: 297px;
+    height: 106px;
+}
+
+footer .contentWrapper ul:first-of-type
+{
+    margin: 40px 0px 88px;
+}
+
+
+
+
 }
